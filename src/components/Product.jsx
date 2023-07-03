@@ -1,5 +1,6 @@
-import React from 'react'
-
+// import { FaCartShopping } from 'react-icons/pi';
+import { PiShoppingCart, PiHeartBold } from 'react-icons/pi';
+// PiShoppingCartSimpleBold
 const Product = (props) => {
   const {productName, description, images} = props.product 
   return (
@@ -7,16 +8,20 @@ const Product = (props) => {
         <div className='w-full'>
             <img src={images[0]} alt={productName} />
         </div>
-        <div>
-
+        <div className='w-full'>
+          <h2 className='text-lg font-bold'> {productName}</h2>
+          <p className='text-xs font-light'>{description}</p>
         </div>
-        <div>
-            <button>
-
+        <div className='w-full grid grid-cols-2 gap-2'>  
+            <button className='border rounded-md bg-red-500 text-white p-1 w-full font-semibold' >BUY</button>
+          <div className='flex justify-end gap-3'>
+            <button className='text-2xl'>
+              <PiHeartBold />
             </button>
-            <button>
-
+            <button className='text-2xl'>
+              <PiShoppingCart />
             </button>
+          </div>
         </div>
     </div>
   )
