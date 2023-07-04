@@ -1,7 +1,6 @@
 import { PiShoppingCart, PiHeartBold } from 'react-icons/pi';
 import { useSelector } from "react-redux"
 import { useParams } from "react-router-dom"
-import PageNotFound from "./PageNotFound"
 import Products from "./Products"
 
 
