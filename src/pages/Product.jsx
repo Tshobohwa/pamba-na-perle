@@ -9,7 +9,6 @@ const Product = () => {
     const {id} = useParams()
     const {products} = useSelector((store) => store.products)
     const product = products[id]
-    if (!product) return <PageNotFound/>
   return (
     <div className="w-full p-4">
       <div className="gap-2 flex w-full h-[500px]">
