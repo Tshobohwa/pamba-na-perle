@@ -1,11 +1,10 @@
-// import { FaCartShopping } from 'react-icons/pi';
 import { PiShoppingCart, PiHeartBold } from 'react-icons/pi';
-// PiShoppingCartSimpleBold
+
 const Product = (props) => {
   const {productName, description, images} = props.product 
   return (
-    <div className='h-full w-full border border-gray-300 p-2 flex flex-col gap-2'>
-        <div className='w-full'>
+    <div className='h-full w-full flex flex-col gap-2'>
+        <div className='w-full rounded-md overflow-hidden'>
             <img src={images[0]} alt={productName} />
         </div>
         <div className='w-full'>
